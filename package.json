@@ -9,6 +9,7 @@
     "lint": "./node_modules/.bin/eslint --quiet --ext .js,.jsx,.ts,.tsx ./",
     "test": "./node_modules/.bin/mocha -r ./node_modules/ts-node/register -r tsconfig-paths/register --config .mocharc.js ./tests/**/*.test.ts --exit",
     "test-coverage": "./node_modules/.bin/nyc --config ./nyc.config.js npm run test",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
